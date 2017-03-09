@@ -1,13 +1,18 @@
-/* Barrels start */
-import { Routes } from '@angular/router';
-/* Barrels end */
-import { AppComponent } from './01/app.component';
+import { RouterModule, Route } from '@angular/router';
+import { ModuleWithProviders } from '@angular/core';
+import { AppComponent } from './app.component';
 import { CalendarComponent } from './02/calendar.component';
 import { HomeComponent} from './home/home.component';
-
-export const rootRouterConfig: Routes = [
+const routes: Route[] = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
     { path: 'calendar', component: CalendarComponent },
     { path: '**', component: HomeComponent }
-]
+];
+
+export const routing: ModuleWithProviders = RouterModule.forRoot(
+  routes,
+  {
+    useHash: true
+  }
+);
