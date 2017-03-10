@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   templateUrl: './home.component.html',
-  styleUrls: ['home.component.css']
+  styleUrls: ['business-casual.css']
 })
 export class HomeComponent {
   title = 'Home';
