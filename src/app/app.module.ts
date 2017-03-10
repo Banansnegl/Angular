@@ -6,7 +6,8 @@ import { HttpModule } from '@angular/http';
 
 import { HomeComponent} from './home/home.component';
 import { CalendarComponent } from './02/calendar.component';
-
+import { AboutComponent } from './about/about.component';
+import { GalleriComponent } from './galleri/galleri.component';
 
 import { AppComponent } from './app.component';
 import { routing } from './app.router';
@@ -16,7 +17,9 @@ import { routing } from './app.router';
   declarations: [
     AppComponent,
     HomeComponent,
-    CalendarComponent
+    CalendarComponent,
+    AboutComponent,
+    GalleriComponent
   ],
   imports: [
     BrowserModule,
